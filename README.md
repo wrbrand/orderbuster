@@ -8,9 +8,9 @@ The vulnerability [can be detected by sqlmap](https://github.com/sqlmapproject/s
 
 The script can be used from a command line as follows:
 
-`node bust.js [vulnerableStatement] [targetFieldSelectStatement] [estimatedLength] [knownSortableColumn] [javascriptOrderTest] [cookies]`
+`node bust.js [vulnerableURL] [targetFieldSelectStatement] [estimatedLength] [knownSortableColumn] [javascriptOrderTest] [cookies]`
 
-Where **vulnerableStatement** is a URL ending in the injection point, **knownSortableColumn** is an existing sortable column in the vulnerable query, and **javascriptOrderTest** is a comparison (in Javascript) that returns whether the given response **html** is ordered ascending or descending with regard to **knownSortableColumn**. 
+Where **vulnerableURL** is a URL ending in the injection point, **knownSortableColumn** is an existing sortable column in the vulnerable query, and **javascriptOrderTest** is a comparison (in Javascript) that returns whether the given response **html** is ordered ascending or descending with regard to **knownSortableColumn**. 
 
 For example: 
 
