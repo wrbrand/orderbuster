@@ -1,0 +1,11 @@
+{
+  "name": "orderbuster",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wrbrand/orderbuster.git"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
