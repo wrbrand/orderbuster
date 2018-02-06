@@ -1,6 +1,6 @@
 # orderbuster
 
-This is a Node.js script that extracts data from a database using a URL vulnerable to an "ORDER BY" SQL injection point. This technique has been described by [Joseph Keeler](http://josephkeeler.com/2009/05/php-security-sql-injection-in-order-by/) and Alexandre de Dommelin, among others, and is described by the Portswigger as ["the most common injection point within the SQL query structure."](https://support.portswigger.net/customer/en/portal/articles/2590771-sql-injection-in-the-query-structure)
+This is a Node.js script that extracts data from a database using a URL vulnerable to an "ORDER BY" SQL injection point. This technique has been described by [Joseph Keeler](http://josephkeeler.com/2009/05/php-security-sql-injection-in-order-by/) and Alexandre de Dommelin, among others, and is described by Portswigger as ["the most common injection point within the SQL query structure."](https://support.portswigger.net/customer/en/portal/articles/2590771-sql-injection-in-the-query-structure)
 
 A similar tool written in Perl has been demonstrated by [Brian Cardinale](https://www.youtube.com/watch?v=WKnqP0izeLE). The vulnerability [can be detected by sqlmap](https://github.com/sqlmapproject/sqlmap/issues/97). The best method to protect against it is to whitelist ORDER BY parameters such that they can only be valid column names. 
 
